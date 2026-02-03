@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+</head>
+
+<body>
+
+<center>
+  <h1 style="color:red;">ADMIN PAGE</h1>
+  <h3 style="color:blueviolet;">Change or Add Whatever You Want</h3>
+</center>
+
+<form onsubmit="addFromForm(event)" style="border: 5px solid black; padding: 20px;">
+
+  <h2>Media Name</h2>
+  Name:
+  <input type="text" id="title" required><br><br>
+
+  Description:
+  <textarea rows="5" cols="30" id="description" required></textarea><br><br>
+
+  <h2>Language</h2>
+  <input type="radio" name="language" value="English" required> English<br>
+  <input type="radio" name="language" value="Hindi"> Hindi<br>
+  <input type="radio" name="language" value="Odia"> Odia<br>
+  <input type="radio" name="language" value="Telugu"> Telugu<br>
+  <input type="radio" name="language" value="Tamil"> Tamil<br>
+  <input type="radio" name="language" value="Kannada"> Kannada<br>
+  <input type="radio" name="language" value="Malayalam"> Malayalam<br><br>
+
+  <h2>Media Type</h2>
+  <select id="type" required>
+    <option value="movie">Movie</option>
+    <option value="anime">Anime</option>
+  </select><br><br>
+
+  <h2>Poster Upload</h2>
+  Poster Image URL:
+  <input type="url" id="poster" placeholder="https://image-link.jpg" required><br><br>
+
+  Trailer Link:
+  <input type="url" id="trailer" required><br><br>
+
+  Genres (comma separated):
+  <input type="text" id="genres" placeholder="Action, Drama"><br><br>
+
+  <center>
+    <input type="reset" value="Reset"
+      style="background-color:rgb(138, 218, 20); padding: 10px 20px; cursor: pointer;"><br><br>
+
+    <input type="submit" value="Submit"
+      style="background-color:skyblue; padding: 20px 30px; cursor: pointer;">
+  </center>
+
+</form>
+
+<hr>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
